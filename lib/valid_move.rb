@@ -2,8 +2,7 @@
 def valid_move?(board, index)
   if !position_taken?(board, index)
     return true
-  elsif
-    index.between?(1, 9))
+  elsif index.between?(1, 9)
     return true
   elsif position_taken?(board, index)
     return false
